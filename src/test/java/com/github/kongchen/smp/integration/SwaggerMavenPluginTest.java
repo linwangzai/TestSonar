@@ -137,6 +137,7 @@ public class SwaggerMavenPluginTest extends AbstractMojoTestCase {
                 if (expect == null && actual == null) {
                     break;
                 }
+
                 Assert.assertEquals(actual.trim(), expect.trim(), "" + count);
             }
 

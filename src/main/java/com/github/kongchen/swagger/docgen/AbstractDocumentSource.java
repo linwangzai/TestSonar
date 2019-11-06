@@ -490,6 +490,8 @@ public abstract class AbstractDocumentSource<D extends AbstractReader & ClassSwa
 
 enum Output {
     jSon,
+    KKK,
+    hhh,
     yAml
 }
 
