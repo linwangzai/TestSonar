@@ -1,0 +1,12 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  - openjdk11
+
+before_install:
+
+install:
+
+
+
