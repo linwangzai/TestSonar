@@ -209,11 +209,11 @@ public abstract class AbstractDocumentSource<D extends AbstractReader & ClassSwa
             try {
                 Output output = Output.valueOf(format.toLowerCase());
                 switch (output) {
-                    case json:
+                    case jSon:
                         ObjectWriter jsonWriter = mapper.writer(new DefaultPrettyPrinter());
                         FileUtils.write(new File(dir, fileName + ".json"), jsonWriter.writeValueAsString(swagger), encoding);
                         break;
-                    case yaml:
+                    case yAml:
                         FileUtils.write(new File(dir, fileName + ".yaml"), Yaml.pretty().writeValueAsString(swagger), encoding);
                         break;
                 }
@@ -489,8 +489,8 @@ public abstract class AbstractDocumentSource<D extends AbstractReader & ClassSwa
 }
 
 enum Output {
-    json,
-    yaml
+    jSon,
+    yAml
 }
 
 class TemplatePath {
